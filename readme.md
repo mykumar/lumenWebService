@@ -27,6 +27,17 @@ According to the [offical documentation](http://fractal.thephpleague.com/) :
 
 > Fractal provides a presentation and transformation layer for complex data output, the like found in RESTful APIs, and works really well with JSON. Think of this as a view layer for your JSON/YAML/etc. When building an API it is common for people to just grab stuff from the database and pass it to json_encode(). This might be passable for “trivial” APIs but if they are in use by the public, or used by mobile applications then this will quickly lead to inconsistent output. 
 
+In short. It is considered bad practice to output your database structure directly to the user. So we have to use a transformation layer to transform the data from the database to something that makes sense to the end user of that API.
+
+To add the transformer, at first we need to install the fractal
+
+```sh
+ composer require league/fractal
+```
+
+Then, add the transformer class to the App/Transformers/ . We can use Collection (on more than one item) on the transformer (or) single item on the transformer.
+
+
 ## Routing 
 
 When we are adding middlwares, we should add them in the App/Http/routes. For example in this template:
