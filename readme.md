@@ -23,7 +23,7 @@ $app->alias('App\Http\Middleware\JSONMiddleware', 'json');
 ```
 ## Using Fractal with Laravel to create an API
 
-According ton the offical documentation 
+According to the [offical documentation](http://fractal.thephpleague.com/) : 
 
 > Fractal provides a presentation and transformation layer for complex data output, the like found in RESTful APIs, and works really well with JSON. Think of this as a view layer for your JSON/YAML/etc. When building an API it is common for people to just grab stuff from the database and pass it to json_encode(). This might be passable for “trivial” APIs but if they are in use by the public, or used by mobile applications then this will quickly lead to inconsistent output. 
 
@@ -45,3 +45,6 @@ Route::group([
 ## License
 
 The Lumen RESTFul web service is open-sourced software licensed under the [MIT license](http://opensource.org/licenses/MIT)
+
+
+
