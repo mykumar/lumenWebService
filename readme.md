@@ -2,7 +2,7 @@
 
 - Clone the sample lumen web service
 - Install the dependencies using the composer
-- 
+
 ```sh
 $ git clone https://github.com/smileofninja/lumenWebService.git
 $ cd lumenWebService
